@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="stylesheet" href="./css/index1.css">
+  <link rel="stylesheet" href="./fonts/iconfont.css">
+</head>
+
+<body>
+    <div id="box" class="box">
+    </div>
+    <script src="./js/index1.js"></script>
+    <script>
+      //数据格式 [{title,[{title,[{},{},{}]},{}]},{},{}]  可以下拉多层 
+       renderz('box',[{
+        title: '首页',
+        children: [{
+          title: '选项一',
+          children: [{
+            title: '选项卡一一',
+            children:[]
+          },{
+            title: '选项卡一二',
+            children:[]
+          },{
+            title: '选项卡一三',
+            children:[]
+          }]
+        },{
+          title: '选项二',
+          children: []
+        },{
+          title: '选项三',
+          children: []
+        }]
+      },
+      {
+        title: '解决方案',
+        children: [{
+          title: '移动模块',
+          children: []
+        },{
+          title: '后台模板',
+          children: [{
+            title: '选项卡一一',
+            children:[]
+          },{
+            title: '选项卡一二',
+            children:[]
+          },{
+            title: '选项卡一三',
+            children:[]
+          }]
+        },{
+          title: '电商平台',
+          children: []
+        }]
+      },
+      {
+        title: '产品',
+        children: []
+      }, {
+        title: '大数据',
+        children: []
+      }]);
+    
+    </script>
+</body>
+<html>
